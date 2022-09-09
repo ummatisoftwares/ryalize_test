@@ -33,7 +33,7 @@ Center body(BuildContext context) {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: const BorderRadius.all(Radius.circular(8.0)),
-                            border: Border.all(width: 1.0, color: Colors.black26,),
+                            border: Border.all(width: 1.0, color: Colors.black26,),/**/
                           ),
                           child: Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -57,7 +57,7 @@ Center body(BuildContext context) {
                   ],
                 ),
                 SizedBox(height: 12,),
-                Divider(color: Colors.black87, thickness: 0.8,),
+                Divider(color: Colors.black87, thickness: 0.6,),
                 SizedBox(height: 6,),
                 Divider(color: Colors.black87, thickness: 0.6,)
               ],
