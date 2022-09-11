@@ -12,8 +12,8 @@ SizedBox body(BuildContext context) {
       direction: isScreenWide? Axis.horizontal : Axis.vertical,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        service(img: "helper.png", text: "Are you seeking care for your\nlove one?", btnText: "Find a Helper", btnColor: const Color(0xFF79C5C7)),
-        service(img: "job.png", text: "Or you're looking for a care,\nhousekeeper, or tutor job?", btnText: "Look for a Job", btnColor: const Color(0xFFE3A47B)),
+        service(img: "helper.png", text: "Want to see UI\nClick here", btnText: "See UI", btnColor: const Color(0xFF79C5C7)),
+        service(img: "job.png", text: "Want to check RestFul APIs\nClick here", btnText: "RestFul APIs", btnColor: const Color(0xFFE3A47B)),
       ],
     ),
   );
@@ -38,7 +38,7 @@ Expanded service({required String img, required String text, required String btn
                 elevation: MaterialStateProperty.resolveWith<double>((Set<MaterialState> states) {return 0.0;}),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0), side: BorderSide(color: btnColor)))
             ),
-            onPressed: ()=> btnText == "Find a Helper"? Get.toNamed(Routes.HOME2) : null,
+            onPressed: ()=> btnText == "See UI"? Get.toNamed(Routes.HOME2) : Get.toNamed(Routes.HOME4),
             child: Text(btnText),
           ),
         )
